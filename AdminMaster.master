@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Ukraine Airline</title>
+      <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="CSS/reset.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" media="screen"/> 
+	<link rel="stylesheet" href="CSS/zerogrid.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="CSS/responsive.css" type="text/css" media="screen"/> 
+    <link href="CSS/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="js/js-image-slider.js" type="text/javascript"></script>
+    <link href="CSS/generic.css" rel="stylesheet" type="text/css" />
+	<script src="js/css3-mediaqueries.js"></script>
+    <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
+    <script src="js/cufon-replace.js" type="text/javascript"></script>
+    <script src="js/NewsGoth_400.font.js" type="text/javascript"></script>
+	<script src="js/NewsGoth_700.font.js" type="text/javascript"></script>
+    <script src="js/NewsGoth_Lt_BT_italic_400.font.js" type="text/javascript"></script>
+    <script src="js/Vegur_400.font.js" type="text/javascript"></script> 
+    <script src="js/FF-cash.js" type="text/javascript"></script>
+    <script src="js/jquery.featureCarousel.js" type="text/javascript"></script>     
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#carousel").featureCarousel({
+			autoPlay:7000,
+			trackerIndividual:false,
+			trackerSummation:false,
+			topPadding:50,
+			smallFeatureWidth:.9,
+			smallFeatureHeight:.9,
+			sidePadding:0,
+			smallFeatureOffset:0
+		});
+      });
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+            width: 301px;
+            height: 44px;
+            font-size: xx-large;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .auto-style3 {
+            left: 0px;
+            top: 0px;
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 100%;
+            height: 105px;
+            overflow: hidden;
+            background: #131313 url('../images/row-top-tail.jpg') repeat-x center top;
+        }
+        .auto-style5 {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            text-align: right;
+        }
+    </style>
+</head>
+<body style="width: 100%">
+    
+    <form runat="server">
+    	<!--==============================header=================================-->
+        <header class="auto-style3">
+        	<div class="auto-style4">
+            	<div class="main">
+                	<div class="auto-style5">
+                        
+                    	<h1 class="auto-style1">Ukraine Airline</h1>
+                        
+
+                        <br />                      
+                        <asp:Button ID="Button1" runat="server" BorderStyle="None" OnClick="Button1_Click" Text="Sign out" />
+                        
+
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="menu-row">
+            	<div class="menu-bg">
+                    <div class="main">
+                        <nav class="indent-left">
+                            <ul class="menu wrapper">
+                                
+                                <li><a href="FlightList.aspx">Flights List</a></li>
+                                <li><a href="AddFlight.aspx">New Flights</a></li>
+                                <li><a href="AddPlane.aspx">New Plane</a></li>
+                                <li><a href="CheckReservations.aspx">Check Reservation</a></li>
+                                <li><a href="AddUser.aspx">New User</a></li>
+                                
+                              
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        
+       
+	
+	
+	<script type="text/javascript"> Cufon.now(); </script>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            <footer>
+        
+
+                            <ul class="list-services border-bot img-indent-bot">
+                            	<li><a href="">Facebook</a>&nbsp;<a class="item-1" href="">Twitter</a>&nbsp;</li>
+                            </ul>
+                            <p class="p1">Copyright &copy; 2017 Ukraine Airline</p>
+
+
+    </footer>
+        </form>
+
+</body>
+</html>
